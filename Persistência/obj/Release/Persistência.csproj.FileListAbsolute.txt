@@ -1,0 +1,8 @@
+C:\Users\Usuario\Documents\Projeto_AWM\Persistência\bin\Release\Persistência.dll.config
+C:\Users\Usuario\Documents\Projeto_AWM\Persistência\bin\Release\Persistência.dll
+C:\Users\Usuario\Documents\Projeto_AWM\Persistência\bin\Release\Persistência.pdb
+C:\Users\Usuario\Documents\Projeto_AWM\Persistência\bin\Release\EntityFramework.dll
+C:\Users\Usuario\Documents\Projeto_AWM\Persistência\bin\Release\EntityFramework.xml
+C:\Users\Usuario\Documents\Projeto_AWM\Persistência\obj\Release\Persistência.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\Projeto_AWM\Persistência\obj\Release\Persistência.dll
+C:\Users\Usuario\Documents\Projeto_AWM\Persistência\obj\Release\Persistência.pdb

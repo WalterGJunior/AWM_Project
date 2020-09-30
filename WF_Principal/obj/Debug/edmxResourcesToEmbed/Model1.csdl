@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_AWMModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="db_AWMEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="tb_Treinamentos" EntityType="db_AWMModel.tb_Treinamentos" />
+  </EntityContainer>
+  <EntityType Name="tb_Treinamentos">
+    <Key>
+      <PropertyRef Name="id_Treinamentos" />
+    </Key>
+    <Property Name="id_Treinamentos" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="matricula" Type="Int32" />
+    <Property Name="nomeTreinamento" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="descricaoTreinamento" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="id_treinador" Type="Int32" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_AWMModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="db_AWMModelStoreContainer">
+    <EntitySet Name="tb_Treinamentos" EntityType="db_AWMModel.Store.tb_Treinamentos" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="tb_Treinamentos">
+    <Key>
+      <PropertyRef Name="id_Treinamentos" />
+    </Key>
+    <Property Name="id_Treinamentos" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="matricula" Type="int" />
+    <Property Name="nomeTreinamento" Type="varchar" MaxLength="20" />
+    <Property Name="descricaoTreinamento" Type="varchar" MaxLength="15" />
+    <Property Name="id_treinador" Type="int" />
+  </EntityType>
+</Schema>

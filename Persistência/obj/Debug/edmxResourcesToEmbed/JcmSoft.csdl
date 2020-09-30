@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_AWMModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="db_AWMEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="tb_AgendaTreinamentos" EntityType="db_AWMModel.tb_AgendaTreinamentos" />
+    <EntitySet Name="tb_treinador" EntityType="db_AWMModel.tb_treinador" />
+    <EntitySet Name="tb_Treinamentos" EntityType="db_AWMModel.tb_Treinamentos" />
+    <EntitySet Name="tbEmpresa" EntityType="db_AWMModel.tbEmpresa" />
+    <EntitySet Name="tbFuncionario" EntityType="db_AWMModel.tbFuncionario" />
+    <AssociationSet Name="FK_tb_AgendaTreinamentos_tb_Treinamentos" Association="db_AWMModel.FK_tb_AgendaTreinamentos_tb_Treinamentos">
+      <End Role="tb_Treinamentos" EntitySet="tb_Treinamentos" />
+      <End Role="tb_AgendaTreinamentos" EntitySet="tb_AgendaTreinamentos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_AgendaTreinamentos_tbEmpresa" Association="db_AWMModel.FK_tb_AgendaTreinamentos_tbEmpresa">
+      <End Role="tbEmpresa" EntitySet="tbEmpresa" />
+      <End Role="tb_AgendaTreinamentos" EntitySet="tb_AgendaTreinamentos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Treinamentos_tb_Treinador" Association="db_AWMModel.FK_tb_Treinamentos_tb_Treinador">
+      <End Role="tb_treinador" EntitySet="tb_treinador" />
+      <End Role="tb_Treinamentos" EntitySet="tb_Treinamentos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbFuncionario_tbEmpresa" Association="db_AWMModel.FK_tbFuncionario_tbEmpresa">
+      <End Role="tbEmpresa" EntitySet="tbEmpresa" />
+      <End Role="tbFuncionario" EntitySet="tbFuncionario" />
+    </AssociationSet>
+    <EntitySet Name="sysdiagrams" EntityType="db_AWMModel.sysdiagrams" />
+  </EntityContainer>
+  <EntityType Name="tb_AgendaTreinamentos">
+    <Key>
+      <PropertyRef Name="dtInicio" />
+    </Key>
+    <Property Name="dtInicio" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DtTermino" Type="DateTime" Precision="0" />
+    <Property Name="qtdeparticipantes" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="empresa_cnpj" Type="String" MaxLength="14" Unicode="false" FixedLength="true" />
+    <Property Name="id_Treinamentos" Type="Int32" />
+    <NavigationProperty Name="tb_Treinamentos" Relationship="db_AWMModel.FK_tb_AgendaTreinamentos_tb_Treinamentos" FromRole="tb_AgendaTreinamentos" ToRole="tb_Treinamentos" />
+    <NavigationProperty Name="tbEmpresa" Relationship="db_AWMModel.FK_tb_AgendaTreinamentos_tbEmpresa" FromRole="tb_AgendaTreinamentos" ToRole="tbEmpresa" />
+  </EntityType>
+  <EntityType Name="tb_treinador">
+    <Key>
+      <PropertyRef Name="id_treinador" />
+    </Key>
+    <Property Name="id_treinador" Type="Int32" Nullable="false" />
+    <Property Name="matricula" Type="Int32" />
+    <Property Name="nome" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="idade" Type="Int32" />
+    <Property Name="datenascimento" Type="DateTime" Precision="0" />
+    <Property Name="formacao" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="telefonefixo" Type="Int32" />
+    <Property Name="telefonecelular" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="tb_Treinamentos" Relationship="db_AWMModel.FK_tb_Treinamentos_tb_Treinador" FromRole="tb_treinador" ToRole="tb_Treinamentos" />
+  </EntityType>
+  <EntityType Name="tb_Treinamentos">
+    <Key>
+      <PropertyRef Name="id_Treinamentos" />
+    </Key>
+    <Property Name="id_Treinamentos" Type="Int32" Nullable="false" />
+    <Property Name="matricula" Type="Int32" />
+    <Property Name="nomeTreinamento" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="descricaoTreinamento" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="id_treinador" Type="Int32" />
+    <NavigationProperty Name="tb_AgendaTreinamentos" Relationship="db_AWMModel.FK_tb_AgendaTreinamentos_tb_Treinamentos" FromRole="tb_Treinamentos" ToRole="tb_AgendaTreinamentos" />
+    <NavigationProperty Name="tb_treinador" Relationship="db_AWMModel.FK_tb_Treinamentos_tb_Treinador" FromRole="tb_Treinamentos" ToRole="tb_treinador" />
+  </EntityType>
+  <EntityType Name="tbEmpresa">
+    <Key>
+      <PropertyRef Name="cnpj" />
+    </Key>
+    <Property Name="cnpj" Type="String" Nullable="false" MaxLength="14" Unicode="false" FixedLength="true" />
+    <Property Name="nomefantasia" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="razaosocial" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="endereco" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="cep" Type="Int32" />
+    <Property Name="cidade" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="estado" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="inscestadual" Type="Int32" />
+    <Property Name="insmunicipal" Type="Int32" />
+    <NavigationProperty Name="tb_AgendaTreinamentos" Relationship="db_AWMModel.FK_tb_AgendaTreinamentos_tbEmpresa" FromRole="tbEmpresa" ToRole="tb_AgendaTreinamentos" />
+    <NavigationProperty Name="tbFuncionario" Relationship="db_AWMModel.FK_tbFuncionario_tbEmpresa" FromRole="tbEmpresa" ToRole="tbFuncionario" />
+  </EntityType>
+  <EntityType Name="tbFuncionario">
+    <Key>
+      <PropertyRef Name="id_Funcionario" />
+    </Key>
+    <Property Name="id_Funcionario" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="matricula" Type="Int32" />
+    <Property Name="nome" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="rg" Type="String" MaxLength="8" Unicode="false" FixedLength="true" />
+    <Property Name="cpf" Type="String" MaxLength="11" Unicode="false" FixedLength="true" />
+    <Property Name="endereco" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="estado" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="telefone" Type="Int32" />
+    <Property Name="email" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="dtDemissao" Type="DateTime" Precision="0" />
+    <Property Name="cargo" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="empresa_cnpj" Type="String" MaxLength="14" Unicode="false" FixedLength="true" />
+    <NavigationProperty Name="tbEmpresa" Relationship="db_AWMModel.FK_tbFuncionario_tbEmpresa" FromRole="tbFuncionario" ToRole="tbEmpresa" />
+    <Property Type="Int32" Name="cep" />
+    <Property Type="String" Name="cidade" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="celular" />
+    <Property Type="DateTime" Name="dataAdmissao" Precision="3" />
+  </EntityType>
+  <Association Name="FK_tb_AgendaTreinamentos_tb_Treinamentos">
+    <End Role="tb_Treinamentos" Type="db_AWMModel.tb_Treinamentos" Multiplicity="0..1" />
+    <End Role="tb_AgendaTreinamentos" Type="db_AWMModel.tb_AgendaTreinamentos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Treinamentos">
+        <PropertyRef Name="id_Treinamentos" />
+      </Principal>
+      <Dependent Role="tb_AgendaTreinamentos">
+        <PropertyRef Name="id_Treinamentos" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_AgendaTreinamentos_tbEmpresa">
+    <End Role="tbEmpresa" Type="db_AWMModel.tbEmpresa" Multiplicity="0..1" />
+    <End Role="tb_AgendaTreinamentos" Type="db_AWMModel.tb_AgendaTreinamentos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbEmpresa">
+        <PropertyRef Name="cnpj" />
+      </Principal>
+      <Dependent Role="tb_AgendaTreinamentos">
+        <PropertyRef Name="empresa_cnpj" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Treinamentos_tb_Treinador">
+    <End Role="tb_treinador" Type="db_AWMModel.tb_treinador" Multiplicity="0..1" />
+    <End Role="tb_Treinamentos" Type="db_AWMModel.tb_Treinamentos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_treinador">
+        <PropertyRef Name="id_treinador" />
+      </Principal>
+      <Dependent Role="tb_Treinamentos">
+        <PropertyRef Name="id_treinador" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbFuncionario_tbEmpresa">
+    <End Role="tbEmpresa" Type="db_AWMModel.tbEmpresa" Multiplicity="0..1" />
+    <End Role="tbFuncionario" Type="db_AWMModel.tbFuncionario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbEmpresa">
+        <PropertyRef Name="cnpj" />
+      </Principal>
+      <Dependent Role="tbFuncionario">
+        <PropertyRef Name="empresa_cnpj" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Type="String" Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="principal_id" Nullable="false" />
+    <Property Type="Int32" Name="diagram_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="version" />
+    <Property Type="Binary" Name="definition" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_AWMModelStoreContainer" CdmEntityContainer="db_AWMEntities">
+    <EntitySetMapping Name="tb_Treinamentos">
+      <EntityTypeMapping TypeName="db_AWMModel.tb_Treinamentos">
+        <MappingFragment StoreEntitySet="tb_Treinamentos">
+          <ScalarProperty Name="id_Treinamentos" ColumnName="id_Treinamentos" />
+          <ScalarProperty Name="matricula" ColumnName="matricula" />
+          <ScalarProperty Name="nomeTreinamento" ColumnName="nomeTreinamento" />
+          <ScalarProperty Name="descricaoTreinamento" ColumnName="descricaoTreinamento" />
+          <ScalarProperty Name="id_treinador" ColumnName="id_treinador" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

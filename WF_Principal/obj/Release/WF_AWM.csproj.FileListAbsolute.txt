@@ -1,0 +1,2 @@
+C:\Users\Usuario\Documents\Projeto_AWM\WF_Principal\bin\Release\WF_Principal.exe.config
+C:\Users\Usuario\Documents\Projeto_AWM\WF_Principal\obj\Release\WF_AWM.csprojResolveAssemblyReference.cache

@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_AWMModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="db_AWMModelStoreContainer">
+    <EntitySet Name="tb_AgendaTreinamentos" EntityType="db_AWMModel.Store.tb_AgendaTreinamentos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_treinador" EntityType="db_AWMModel.Store.tb_treinador" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tb_Treinamentos" EntityType="db_AWMModel.Store.tb_Treinamentos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbEmpresa" EntityType="db_AWMModel.Store.tbEmpresa" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbFuncionario" EntityType="db_AWMModel.Store.tbFuncionario" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_tb_AgendaTreinamentos_tb_Treinamentos" Association="db_AWMModel.Store.FK_tb_AgendaTreinamentos_tb_Treinamentos">
+      <End Role="tb_Treinamentos" EntitySet="tb_Treinamentos" />
+      <End Role="tb_AgendaTreinamentos" EntitySet="tb_AgendaTreinamentos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_AgendaTreinamentos_tbEmpresa" Association="db_AWMModel.Store.FK_tb_AgendaTreinamentos_tbEmpresa">
+      <End Role="tbEmpresa" EntitySet="tbEmpresa" />
+      <End Role="tb_AgendaTreinamentos" EntitySet="tb_AgendaTreinamentos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tb_Treinamentos_tb_Treinador" Association="db_AWMModel.Store.FK_tb_Treinamentos_tb_Treinador">
+      <End Role="tb_treinador" EntitySet="tb_treinador" />
+      <End Role="tb_Treinamentos" EntitySet="tb_Treinamentos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbFuncionario_tbEmpresa" Association="db_AWMModel.Store.FK_tbFuncionario_tbEmpresa">
+      <End Role="tbEmpresa" EntitySet="tbEmpresa" />
+      <End Role="tbFuncionario" EntitySet="tbFuncionario" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="tb_AgendaTreinamentos">
+    <Key>
+      <PropertyRef Name="dtInicio" />
+    </Key>
+    <Property Name="dtInicio" Type="date" Nullable="false" />
+    <Property Name="DtTermino" Type="date" />
+    <Property Name="qtdeparticipantes" Type="varchar" MaxLength="50" />
+    <Property Name="empresa_cnpj" Type="char" MaxLength="14" />
+    <Property Name="id_Treinamentos" Type="int" />
+  </EntityType>
+  <EntityType Name="tb_treinador">
+    <Key>
+      <PropertyRef Name="id_treinador" />
+    </Key>
+    <Property Name="id_treinador" Type="int" Nullable="false" />
+    <Property Name="matricula" Type="int" />
+    <Property Name="nome" Type="varchar" MaxLength="20" />
+    <Property Name="idade" Type="int" />
+    <Property Name="datenascimento" Type="date" />
+    <Property Name="formacao" Type="varchar" MaxLength="15" />
+    <Property Name="telefonefixo" Type="int" />
+    <Property Name="telefonecelular" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="tb_Treinamentos">
+    <Key>
+      <PropertyRef Name="id_Treinamentos" />
+    </Key>
+    <Property Name="id_Treinamentos" Type="int" Nullable="false" />
+    <Property Name="matricula" Type="int" />
+    <Property Name="nomeTreinamento" Type="varchar" MaxLength="20" />
+    <Property Name="descricaoTreinamento" Type="varchar" MaxLength="15" />
+    <Property Name="id_treinador" Type="int" />
+  </EntityType>
+  <EntityType Name="tbEmpresa">
+    <Key>
+      <PropertyRef Name="cnpj" />
+    </Key>
+    <Property Name="cnpj" Type="char" Nullable="false" MaxLength="14" />
+    <Property Name="nomefantasia" Type="varchar" MaxLength="50" />
+    <Property Name="razaosocial" Type="varchar" MaxLength="50" />
+    <Property Name="endereco" Type="varchar" MaxLength="50" />
+    <Property Name="cep" Type="int" />
+    <Property Name="cidade" Type="varchar" MaxLength="20" />
+    <Property Name="estado" Type="varchar" MaxLength="15" />
+    <Property Name="inscestadual" Type="int" />
+    <Property Name="insmunicipal" Type="int" />
+  </EntityType>
+  <EntityType Name="tbFuncionario">
+    <Key>
+      <PropertyRef Name="id_Funcionario" />
+    </Key>
+    <Property Name="id_Funcionario" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="matricula" Type="int" />
+    <Property Name="nome" Type="varchar" MaxLength="20" />
+    <Property Name="rg" Type="char" MaxLength="8" />
+    <Property Name="cpf" Type="char" MaxLength="11" />
+    <Property Name="endereco" Type="varchar" MaxLength="50" />
+    <Property Name="estado" Type="varchar" MaxLength="15" />
+    <Property Name="telefone" Type="int" />
+    <Property Name="email" Type="varchar" MaxLength="20" />
+    <Property Name="dtAdmissao" Type="date" />
+    <Property Name="dtDemissao" Type="date" />
+    <Property Name="cargo" Type="varchar" MaxLength="15" />
+    <Property Name="empresa_cnpj" Type="char" MaxLength="14" />
+  </EntityType>
+  <Association Name="FK_tb_AgendaTreinamentos_tb_Treinamentos">
+    <End Role="tb_Treinamentos" Type="db_AWMModel.Store.tb_Treinamentos" Multiplicity="0..1" />
+    <End Role="tb_AgendaTreinamentos" Type="db_AWMModel.Store.tb_AgendaTreinamentos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_Treinamentos">
+        <PropertyRef Name="id_Treinamentos" />
+      </Principal>
+      <Dependent Role="tb_AgendaTreinamentos">
+        <PropertyRef Name="id_Treinamentos" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_AgendaTreinamentos_tbEmpresa">
+    <End Role="tbEmpresa" Type="db_AWMModel.Store.tbEmpresa" Multiplicity="0..1" />
+    <End Role="tb_AgendaTreinamentos" Type="db_AWMModel.Store.tb_AgendaTreinamentos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbEmpresa">
+        <PropertyRef Name="cnpj" />
+      </Principal>
+      <Dependent Role="tb_AgendaTreinamentos">
+        <PropertyRef Name="empresa_cnpj" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tb_Treinamentos_tb_Treinador">
+    <End Role="tb_treinador" Type="db_AWMModel.Store.tb_treinador" Multiplicity="0..1" />
+    <End Role="tb_Treinamentos" Type="db_AWMModel.Store.tb_Treinamentos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_treinador">
+        <PropertyRef Name="id_treinador" />
+      </Principal>
+      <Dependent Role="tb_Treinamentos">
+        <PropertyRef Name="id_treinador" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbFuncionario_tbEmpresa">
+    <End Role="tbEmpresa" Type="db_AWMModel.Store.tbEmpresa" Multiplicity="0..1" />
+    <End Role="tbFuncionario" Type="db_AWMModel.Store.tbFuncionario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbEmpresa">
+        <PropertyRef Name="cnpj" />
+      </Principal>
+      <Dependent Role="tbFuncionario">
+        <PropertyRef Name="empresa_cnpj" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

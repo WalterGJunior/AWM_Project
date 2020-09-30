@@ -1,0 +1,68 @@
+C:\Users\Usuario\Documents\Projeto_AWM\WF_Principal\obj\Debug\WF_AWM.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.FrmCadFuncionario.resources
+C:\Users\Usuario\Documents\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.FrmAgendaEmpresa.resources
+C:\Users\Usuario\Documents\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.FrmCadEmpresa.resources
+C:\Users\Usuario\Documents\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.FrmCadTreinador.resources
+C:\Users\Usuario\Documents\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.FrmCadTreinamentos.resources
+C:\Users\Usuario\Documents\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.Properties.Resources.resources
+C:\Users\Usuario\Documents\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.Form1.resources
+C:\Users\Usuario\Documents\Projeto_AWM\WF_Principal\obj\Debug\WF_AWM.csproj.GenerateResource.Cache
+C:\Users\Usuario\Documents\Projeto_AWM\WF_Principal\bin\Debug\WF_Principal.exe.config
+C:\Users\Usuario\Documents\Projeto_AWM\WF_Principal\bin\Debug\WF_Principal.exe
+C:\Users\Usuario\Documents\Projeto_AWM\WF_Principal\bin\Debug\WF_Principal.pdb
+C:\Users\Usuario\Documents\Projeto_AWM\WF_Principal\bin\Debug\Persistência.dll
+C:\Users\Usuario\Documents\Projeto_AWM\WF_Principal\bin\Debug\EntityFramework.dll
+C:\Users\Usuario\Documents\Projeto_AWM\WF_Principal\bin\Debug\Persistência.pdb
+C:\Users\Usuario\Documents\Projeto_AWM\WF_Principal\bin\Debug\EntityFramework.xml
+C:\Users\Usuario\Documents\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.exe
+C:\Users\Usuario\Documents\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.pdb
+E:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\bin\Debug\WF_Principal.exe.config
+E:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.exe
+E:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.pdb
+E:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\bin\Debug\WF_Principal.exe
+E:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\bin\Debug\WF_Principal.pdb
+E:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\bin\Debug\EntityFramework.dll
+E:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\bin\Debug\Persistência.dll
+E:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\bin\Debug\Persistência.pdb
+E:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\bin\Debug\EntityFramework.xml
+E:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_AWM.csprojResolveAssemblyReference.cache
+E:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.FrmCadFuncionario.resources
+E:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.FrmAgendaEmpresa.resources
+E:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.FrmCadEmpresa.resources
+E:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.FrmCadTreinador.resources
+E:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.FrmCadTreinamentos.resources
+E:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.Properties.Resources.resources
+E:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.Form1.resources
+E:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_AWM.csproj.GenerateResource.Cache
+E:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.exe.licenses
+E:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.DVAgendaTreinamentos.resources
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\bin\Debug\WF_Principal.exe.config
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.exe
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.pdb
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\bin\Debug\WF_Principal.exe
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\bin\Debug\WF_Principal.pdb
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\bin\Debug\EntityFramework.dll
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\bin\Debug\Persistência.dll
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\bin\Debug\Persistência.pdb
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\bin\Debug\EntityFramework.xml
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_AWM.csprojResolveAssemblyReference.cache
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.FrmCadEmpresa.resources
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.FrmCadTreinamentos.resources
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.Properties.Resources.resources
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_AWM.csproj.GenerateResource.Cache
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.FrmLogin.resources
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.CustomAppointmentForm.resources
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.FrmAgenda.resources
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.exe.licenses
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.FrmEmpresas.resources
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.FormBase.resources
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.FrmCadAlunoTreinamento.resources
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\bin\Debug\Relatorios\alunos.frx
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\bin\Debug\FastReport.Bars.dll
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\bin\Debug\FastReport.dll
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\bin\Debug\FastReport.xml
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.FrmRelatorios.resources
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.FrmPrincipal.resources
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.FrmFundo.resources
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.FormCadColaborador.resources
+F:\Projeto Paulo Terra\Projeto_AWM\WF_Principal\obj\Debug\WF_Principal.FrmCadPalestrante.resources

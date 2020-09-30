@@ -1,0 +1,24 @@
+C:\Users\Usuario\Documents\Projeto_AWM\Persistência\bin\Debug\Persistência.dll.config
+C:\Users\Usuario\Documents\Projeto_AWM\Persistência\bin\Debug\Persistência.dll
+C:\Users\Usuario\Documents\Projeto_AWM\Persistência\bin\Debug\Persistência.pdb
+C:\Users\Usuario\Documents\Projeto_AWM\Persistência\bin\Debug\EntityFramework.dll
+C:\Users\Usuario\Documents\Projeto_AWM\Persistência\bin\Debug\EntityFramework.xml
+C:\Users\Usuario\Documents\Projeto_AWM\Persistência\obj\Debug\Persistência.dll
+C:\Users\Usuario\Documents\Projeto_AWM\Persistência\obj\Debug\Persistência.pdb
+C:\Users\Usuario\Documents\Projeto_AWM\Persistência\obj\Debug\Persistência.csprojResolveAssemblyReference.cache
+E:\Projeto Paulo Terra\Projeto_AWM\Persistência\bin\Debug\Persistência.dll.config
+E:\Projeto Paulo Terra\Projeto_AWM\Persistência\bin\Debug\Persistência.dll
+E:\Projeto Paulo Terra\Projeto_AWM\Persistência\bin\Debug\Persistência.pdb
+E:\Projeto Paulo Terra\Projeto_AWM\Persistência\bin\Debug\EntityFramework.dll
+E:\Projeto Paulo Terra\Projeto_AWM\Persistência\bin\Debug\EntityFramework.xml
+E:\Projeto Paulo Terra\Projeto_AWM\Persistência\obj\Debug\Persistência.csprojResolveAssemblyReference.cache
+E:\Projeto Paulo Terra\Projeto_AWM\Persistência\obj\Debug\Persistência.dll
+E:\Projeto Paulo Terra\Projeto_AWM\Persistência\obj\Debug\Persistência.pdb
+F:\Projeto Paulo Terra\Projeto_AWM\Persistência\bin\Debug\Persistência.dll.config
+F:\Projeto Paulo Terra\Projeto_AWM\Persistência\bin\Debug\Persistência.dll
+F:\Projeto Paulo Terra\Projeto_AWM\Persistência\bin\Debug\Persistência.pdb
+F:\Projeto Paulo Terra\Projeto_AWM\Persistência\bin\Debug\EntityFramework.dll
+F:\Projeto Paulo Terra\Projeto_AWM\Persistência\bin\Debug\EntityFramework.xml
+F:\Projeto Paulo Terra\Projeto_AWM\Persistência\obj\Debug\Persistência.csprojResolveAssemblyReference.cache
+F:\Projeto Paulo Terra\Projeto_AWM\Persistência\obj\Debug\Persistência.dll
+F:\Projeto Paulo Terra\Projeto_AWM\Persistência\obj\Debug\Persistência.pdb
