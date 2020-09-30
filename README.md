@@ -1,4 +1,4 @@
-# project
+# Desktop_Project
 
 It was a Project Developed in the end of my Degree. 
 I've used the following technologies to programming this Project.
